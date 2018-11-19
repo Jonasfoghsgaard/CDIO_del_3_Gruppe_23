@@ -11,13 +11,19 @@ public class Controller {
 
 
         for (int i = 0; i < regler.antalSpillere ; i++) {
+            System.out.print("Navn: ");
             System.out.println(Spiller.spillerListe[i].getName());
-            System.out.println(Spiller.spillerListe[i].getAlder());
-            System.out.println(SpillerKonto.kontoListe[i].getPenge());
 
-        }
+
+            System.out.print("Alder: ");
+            System.out.println(Spiller.spillerListe[i].getAlder());
+
+            System.out.print("Konto: ");
+            System.out.println(SpillerKonto.kontoListe[i].getPenge());
+            System.out.println();
 
         }
     }
+}
 
 
