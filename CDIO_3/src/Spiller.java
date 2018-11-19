@@ -20,27 +20,14 @@ public class Spiller {
         alder = scanner.nextInt();
     }
 
-
-
-
     static Spiller[] spillerListe = new Spiller[Controller.regler.antalSpillere];
 
-
     static void opretSpillere() {
-
-
         for (int i = 0; i < Controller.regler.antalSpillere; i++) {
-
             spillerListe[i] = new Spiller();
-
         }
 
-
-
-
     }
-
-
 }
 
 

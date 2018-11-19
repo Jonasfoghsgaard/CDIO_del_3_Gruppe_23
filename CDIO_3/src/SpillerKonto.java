@@ -1,43 +1,29 @@
-import java.util.concurrent.CopyOnWriteArrayList;
-
+import java.util.Scanner;
 public class SpillerKonto {
 
-    Controller controlla = new Controller();
+    private int penge;
 
+    public int getPenge() {
 
-
-    int penge;
-
-    static int startbeholdning (int antalSpillere) {
-
-        if (antalSpillere == 2)
-    {return 20;
+        return penge;
     }
 
-    else if (antalSpillere == 3){
-        return 18;
-}
-
-    else if (antalSpillere == 4) {
-        return 20;
+    private SpillerKonto() {
+        if (Controller.regler.antalSpillere == 2) {
+            penge = 20;
+        } else if (Controller.regler.antalSpillere == 3) {
+            penge = 18;
+        } else if (Controller.regler.antalSpillere == 4) {
+            penge = 16;
         }
-
-        else { return 20; } // slet denne linje senere.
     }
 
 
-SpillerKonto() {
+    static SpillerKonto[] kontoListe = new SpillerKonto[Controller.regler.antalSpillere];
 
-penge = startbeholdning(Controller.regler.antalSpillere);
+    static void opretKonto() {
+        for (int i = 0; i < Controller.regler.antalSpillere; i++)
+            kontoListe[i] = new SpillerKonto();
     }
-
-
-
-
-
-
-
-
-
 
 }
