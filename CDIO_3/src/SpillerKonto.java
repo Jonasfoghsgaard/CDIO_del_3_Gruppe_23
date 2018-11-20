@@ -1,19 +1,25 @@
 import java.util.Scanner;
-public class SpillerKonto {
+ public class SpillerKonto {
+
+
+
 
     private int penge;
 
-    public int getPenge() {
+    int getPenge() {return penge;}
 
-        return penge;
-    }
+     public void setPenge(int penge) {
+         this.penge = penge;
+     }
 
-    private SpillerKonto() {
+     private SpillerKonto() {
         if (Controller.regler.antalSpillere == 2) {
             penge = 20;
-        } else if (Controller.regler.antalSpillere == 3) {
+        }
+        else if (Controller.regler.antalSpillere == 3) {
             penge = 18;
-        } else if (Controller.regler.antalSpillere == 4) {
+        }
+        else if (Controller.regler.antalSpillere == 4) {
             penge = 16;
         }
     }

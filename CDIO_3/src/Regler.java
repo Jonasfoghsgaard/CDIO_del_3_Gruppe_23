@@ -11,8 +11,6 @@ public class Regler
 
 
     Regler(){
-
-
         System.out.println("Indtast antal Spillere: ");
         antalSpillere = scanner.nextInt();
 
