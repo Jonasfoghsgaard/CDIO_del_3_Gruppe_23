@@ -1,18 +1,11 @@
 import java.util.Scanner;
 
 public class Regler
+
 {
-
     int antalSpillere;
-
-
     Scanner scanner = new Scanner(System.in);
-
-
-
     Regler(){
-
-
         System.out.println("Indtast antal Spillere: ");
         antalSpillere = scanner.nextInt();
 
