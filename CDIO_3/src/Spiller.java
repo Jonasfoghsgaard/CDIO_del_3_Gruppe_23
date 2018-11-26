@@ -21,8 +21,27 @@ public class Spiller {
         System.out.println("Indtast navn: ");
         name = scanner.nextLine();
 
-        System.out.println("Indtast Alder: ");
-        alder = scanner.nextInt();
+        System.out.println("Indtast alder: ");
+        alder = 21;
+       // alder = scanner.nextInt();
+
+        while (alder < 10 || alder > 100) {
+
+            if (alder < 10) {
+                System.out.println("Du er for ung til at spille Monopoly Junior");
+                System.out.println("Indtast ny alder: ");
+                alder = scanner.nextInt();
+            }
+
+            if (alder > 100){
+                System.out.println("Du er for gammel til at spille Monopoly Junior");
+                System.out.println("Indtast ny alder: ");
+                alder = scanner.nextInt();
+            }
+
+        }
+
+
 
 
         placering = 0;

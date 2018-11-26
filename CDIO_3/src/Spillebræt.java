@@ -20,6 +20,50 @@ public class Spillebræt {
                transaktioner.passerStart(spiller);
            }
        }
+
+
+
+       void spillerHandling (int spiller, int placering){
+
+       if (Felter.feltliste[placering].ejendomsFelt == true) {
+
+           if (Felter.feltliste[placering].købt == false) {
+               Felter.feltliste[placering].købt = true;
+               Controller.eKonto.konto[spiller].ejet[placering] = true;
+               Transaktioner.betalTilBank(spiller, Felter.feltliste[placering].pris);
+           }
+
+           else if (Felter.feltliste[placering].købt == true) {
+
+               for (int i = 0; i < Controller.regler.antalSpillere ; i++) {
+                   if (Controller.eKonto.konto[i].ejet[placering] == true){
+                       Transaktioner.betalPenge(spiller, i, Felter.feltliste[placering].pris);
+                   }
+               }
+
+           }
+
+
+
+
+
+
+
+       }
+
+
+
+
+
+       }
+
+
+
+
+
+
+
+
 }
 
 

@@ -12,7 +12,8 @@ public class Regler
 
     Regler(){
         System.out.println("Indtast antal Spillere: ");
-        antalSpillere = scanner.nextInt();
+        antalSpillere = 2;
+      //  antalSpillere = scanner.nextInt();
 
         while (antalSpillere < 2) {
             System.out.println("Der skal minimum være 2 spillere.");

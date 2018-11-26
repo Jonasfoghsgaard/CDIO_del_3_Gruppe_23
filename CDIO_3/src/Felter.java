@@ -9,6 +9,7 @@ public class Felter {
     boolean chanceFelt;
     boolean ejendomsFelt;
     boolean ingenHandling;
+    int [] ejerAfFelt;
 
     public Felter() {
         pris = 0;
@@ -19,7 +20,7 @@ public class Felter {
         ejendomsFelt = false;
         ingenHandling = false;
         info ="";
-
+        ejerAfFelt = new int[Controller.regler.antalSpillere + 1];
 
     }
 
@@ -28,15 +29,13 @@ public class Felter {
 
         public void opretFelter(){
 
-
-
         Felter chanceKort = new Felter(); // Felt 3, 9, 15, 21
         chanceKort.chanceFelt = true;
 
 
         Felter start = new Felter(); // Felt 0
         start.startFelt = true;
-        start.info = "Ez";
+        start.info = "Startfelt Modtag 2 ";
 
         Felter burgerBaren = new Felter(); // Felt 1
         burgerBaren.ejendomsFelt = true;
