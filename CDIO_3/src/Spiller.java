@@ -7,6 +7,7 @@ public class Spiller {
     private boolean lossCondition;
     private int placering;
     private int feltplacering;
+    boolean alleredeIFængsel;
 
 
     String getName() {return name; }
@@ -23,7 +24,7 @@ public class Spiller {
 
         System.out.println("Indtast alder: ");
         alder = 21;
-       // alder = scanner.nextInt();
+        alder = scanner.nextInt();
 
         while (alder < 10 || alder > 100) {
 
@@ -34,10 +35,11 @@ public class Spiller {
             }
 
             if (alder > 100){
-                System.out.println("Du er for gammel til at spille Monopoly Junior");
+                System.out.println("Du er for død til at spille Monopoly Junior");
                 System.out.println("Indtast ny alder: ");
                 alder = scanner.nextInt();
             }
+            alleredeIFængsel = false;
 
         }
 

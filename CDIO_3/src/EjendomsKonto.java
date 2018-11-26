@@ -3,7 +3,7 @@ public class EjendomsKonto {
 
 
     boolean ejet[] = new boolean[24];
-    EjendomsKonto[] konto = new EjendomsKonto[24];
+    EjendomsKonto[] konto = new EjendomsKonto[Controller.regler.antalSpillere];
 
     EjendomsKonto() {
 
@@ -18,6 +18,9 @@ public class EjendomsKonto {
         for (int i = 0; i < Controller.regler.antalSpillere; i++) {
             konto[i] = new EjendomsKonto();
 
+
+
+            konto[i].ejet[3] = true;
         }
     }
 }

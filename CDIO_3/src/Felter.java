@@ -9,6 +9,8 @@ public class Felter {
     boolean chanceFelt;
     boolean ejendomsFelt;
     boolean ingenHandling;
+    boolean besøgIFængsel;
+
     int [] ejerAfFelt;
 
     public Felter() {
@@ -35,7 +37,7 @@ public class Felter {
 
         Felter start = new Felter(); // Felt 0
         start.startFelt = true;
-        start.info = "Startfelt Modtag 2 ";
+        start.info = "Startfelt Modtag 2, bortset fra i første runde. ";
 
         Felter burgerBaren = new Felter(); // Felt 1
         burgerBaren.ejendomsFelt = true;
@@ -58,7 +60,7 @@ public class Felter {
         isKiosken.info = "is koster 1";
 
         Felter besøgFængsel = new Felter(); // Felt 6
-        besøgFængsel.ingenHandling = true;
+        besøgFængsel.besøgIFængsel = true;
         besøgFængsel.info = "besøgfængsel koster nadda";
 
         Felter museet = new Felter(); // Felt 7
@@ -107,6 +109,7 @@ public class Felter {
 
         Felter gåIFængsel= new Felter(); // Felt 18
         gåIFængsel.gåIFængsel = true;
+        gåIFængsel.pris = 1;
         gåIFængsel.info = "Du er blevet smidt i fængsel din bandit det koster ikke noget endnu...";
 
         Felter bowlingHallen = new Felter(); // Felt 19

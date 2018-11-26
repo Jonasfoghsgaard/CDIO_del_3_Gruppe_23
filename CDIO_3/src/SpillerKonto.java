@@ -35,8 +35,6 @@ import java.util.Scanner;
          for (int i = 0; i < Controller.regler.antalSpillere; i++) {
              kontoListe[i] = new SpillerKonto();
 
-
-
          }
 
      }
