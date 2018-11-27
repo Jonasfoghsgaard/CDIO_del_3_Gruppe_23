@@ -7,7 +7,8 @@ public class Terning {
     int øjne;
 
     int slåMedTerning() {
-            øjne = terning.nextInt(6) + 1;
+            øjne = terning.nextInt(6)+1 ;
+
         return øjne;}
 
 
