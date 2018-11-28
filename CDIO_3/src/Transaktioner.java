@@ -18,7 +18,7 @@ public class Transaktioner {
         Controller.spillere[betaler].sKonto.setPenge(Controller.spillere[betaler].sKonto.getPenge()-pengeMængde);
     }
 
-    public void passerStart (int modtager){
+    public static void passerStart (int modtager){
         Controller.spillere[modtager].sKonto.setPenge(Controller.spillere[modtager].sKonto.getPenge()+2);
     }
 
