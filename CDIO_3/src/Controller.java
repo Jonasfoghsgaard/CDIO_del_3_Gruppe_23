@@ -12,8 +12,8 @@ public class Controller {
         Spillebræt spillebræt = new Spillebræt();
         spillebræt.felter.opretFelter();
 
-        for(int i=0;i<regler.antalSpillere;i++){
-            spillere[i]= new Spiller();
+        for (int i = 0; i < regler.antalSpillere; i++) {
+            spillere[i] = new Spiller();
         }
 
         for (int j = 0; j < 50; j++) { // udskift til while når kode er klar
@@ -34,8 +34,15 @@ public class Controller {
                 System.out.println("Spiller: " + (i + 1) + " " + spillere[i].getName() + " konto: " + spillere[i].sKonto.getPenge());
             }
             System.out.println("------------------------------------------");
+
+
         }
 
+        for (int i = 0; i < 24; i++) {
+
+
+            System.out.println(spillebræt.felter.feltliste[i].pris);
+    }
 
 
 
@@ -45,7 +52,8 @@ public class Controller {
             System.out.println();
             for (int i = 0; i <24 ; i++) {
                 System.out.println(i + " " + spillere[1].sKonto.ejet[i]);
-            }
+                }
+
 
         }
 

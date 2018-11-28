@@ -43,30 +43,40 @@ public class Felter {
 
 
             if (Controller.spillere[i].sKonto.ejet[1] ==true && Controller.spillere[i].sKonto.ejet[2] == true){
+                feltliste[1].pris = 2;
+                feltliste[2].pris = 2;
                 brun = true;
             }
 
             if (Controller.spillere[i].sKonto.ejet[4] == true && Controller.spillere[i].sKonto.ejet[5]== true) {
-                lyseblå = true;
+                feltliste[4].pris = 2;
+                feltliste[5].pris = 2;
             }
             if (Controller.spillere[i].sKonto.ejet[7] == true && Controller.spillere[i].sKonto.ejet[8]== true) {
-                pink = true;
+                feltliste[7].pris = 4;
+                feltliste[8].pris = 4;
             }
             if (Controller.spillere[i].sKonto.ejet[10]== true && Controller.spillere[i].sKonto.ejet[11]== true) {
-                orange = true;
+                feltliste[10].pris = 4;
+                feltliste[11].pris = 4;
             }
             if (Controller.spillere[i].sKonto.ejet[13]== true && Controller.spillere[i].sKonto.ejet[14]== true) {
-                rød = true;
+                feltliste[13].pris = 6;
+                feltliste[14].pris = 6;
+
             }
             if (Controller.spillere[i].sKonto.ejet[16]== true && Controller.spillere[i].sKonto.ejet[17]== true) {
-                gul = true;
+                feltliste[16].pris = 6;
+                feltliste[17].pris = 6;
             }
 
             if (Controller.spillere[i].sKonto.ejet[19]== true && Controller.spillere[i].sKonto.ejet[20]== true) {
-                grøn = true;
+                feltliste[19].pris = 8;
+                feltliste[20].pris = 8;
             }
             if (Controller.spillere[i].sKonto.ejet[22]== true && Controller.spillere[i].sKonto.ejet[23]== true) {
-                blå = true;
+                feltliste[22].pris = 10;
+                feltliste[23].pris = 10;
             }
         }
 
@@ -89,13 +99,8 @@ public class Felter {
 
         Felter burgerBaren = new Felter(); // Felt 1
             burgerBaren.ejendomsFelt = true;
-            if (brun == true) {
-                burgerBaren.pris = 2;
-                burgerBaren.info = " Burgeren er ekstra dyr idag, betal 2";
-            } else {
-                burgerBaren.pris = 1;
-                burgerBaren.info = "burger koster 1";
-            }
+            burgerBaren.pris = 1;
+            burgerBaren.info = "burger koster 1";
 
         Felter pizzariaet = new Felter(); // Felt 2
             pizzariaet.ejendomsFelt = true;
