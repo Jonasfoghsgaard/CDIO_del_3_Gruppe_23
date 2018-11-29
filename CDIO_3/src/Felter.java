@@ -38,8 +38,6 @@ public class Felter {
 
 
 
-
-
         Felter start = new Felter(); // Felt 0
         start.startFelt = true;
         start.info = "Startfelt Modtag 2, bortset fra i første runde. ";
@@ -150,9 +148,10 @@ public class Felter {
 
 
         Felter gåIFængsel = new Felter(); // Felt 18
-        gåIFængsel.gåIFængsel = true;
+        //gåIFængsel.gåIFængsel = true;
+        gåIFængsel.ingenHandling = true;
         gåIFængsel.pris = 1;
-        gåIFængsel.info = "Du er blevet smidt i fængsel din bandit det koster ikke noget endnu...";
+        gåIFængsel.info = "Du er blevet smidt i fængsel, men det er under reparation, bare fortsæt...";
 
         Felter bowlingHallen = new Felter(); // Felt 19
         bowlingHallen.ejendomsFelt = true;

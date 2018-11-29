@@ -44,14 +44,14 @@ public class Spillebræt {
 
 
 
-        if (Controller.spillere[spiller].alleredeIFængsel == true) {
+     /*   if (Controller.spillere[spiller].alleredeIFængsel == true) {
             placering = 6;
             Controller.spillere[spiller].setPlacering(6);
             Transaktioner.betalTilBank(spiller, 5);
             Controller.spillere[spiller].alleredeIFængsel = false;
         }
 
-
+*/
 
 
 
@@ -76,25 +76,12 @@ public class Spillebræt {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         if (blok.felter.feltliste[placering].gåIFængsel == true) { // er på fængselfelt
-            if (Controller.spillere[spiller].alleredeIFængsel == false) {
+          /*  if (Controller.spillere[spiller].alleredeIFængsel == false) {
                 Controller.spillere[spiller].alleredeIFængsel = true;
                 Controller.spillere[spiller].setPlacering(6);
             }
+            */
 
 
         } else if (blok.felter.feltliste[placering].chanceFelt == true) {
