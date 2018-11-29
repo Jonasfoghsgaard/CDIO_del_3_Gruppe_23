@@ -1,10 +1,15 @@
+package Entity;
+
+import Fields.Chancekort;
+import Game.Controller;
+
 import java.util.Scanner;
 import java.util.Random;
 
 
 public class Spiller {
 
-    SpillerKonto sKonto = new SpillerKonto();
+    public SpillerKonto sKonto = new SpillerKonto();
     Scanner scanner = new Scanner(System.in);
     Chancekort chancekort = new Chancekort();
 
@@ -14,15 +19,15 @@ public class Spiller {
     private int gamlePlacering;
     boolean alleredeIFængsel;
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    int getgamlePlacering() {
+    public int getgamlePlacering() {
         return gamlePlacering;
     }
 
-    int getPlacering() {
+    public int getPlacering() {
         return placering;
     }
 
@@ -44,7 +49,7 @@ public class Spiller {
     }
 
 
-    Spiller() {
+    public Spiller() {
 
         alleredeIFængsel = false;
         placering = 0;
@@ -76,7 +81,7 @@ public class Spiller {
 
 
 
-    void trækChancekort(int spiller) {
+    public void trækChancekort(int spiller) {
         tilfældigKort();
         int kortvælger = getKort();
 
@@ -139,12 +144,12 @@ public class Spiller {
         }
 /*
         if (handling.equals("gratisOrange")){
-            Controller.spillere[spiller].setPlacering(10);
+            Game.Controller.spillere[spiller].setPlacering(10);
             for (int i = 0; i < antalSpillere; i++) {
-                if (Controller.spillere[i].sKonto.ejet[placering] == false)
+                if (Game.Controller.spillere[i].sKonto.ejet[placering] == false)
                 {
                  setPlacering(10);
-                 Transaktioner.betalTilBank(spiller, værdi);
+                 Entity.Transaktioner.betalTilBank(spiller, værdi);
                 }
                 else{
                     setPlacering(10);

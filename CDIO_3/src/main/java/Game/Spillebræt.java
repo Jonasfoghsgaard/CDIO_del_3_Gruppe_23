@@ -1,4 +1,8 @@
-import java.net.ConnectException;
+package Game;
+
+import Entity.Terning;
+import Entity.Transaktioner;
+import Fields.Farveblokke;
 
 public class Spillebræt {
 
@@ -44,11 +48,11 @@ public class Spillebræt {
 
 
 
-     /*   if (Controller.spillere[spiller].alleredeIFængsel == true) {
+     /*   if (Game.Controller.spillere[spiller].alleredeIFængsel == true) {
             placering = 6;
-            Controller.spillere[spiller].setPlacering(6);
-            Transaktioner.betalTilBank(spiller, 5);
-            Controller.spillere[spiller].alleredeIFængsel = false;
+            Game.Controller.spillere[spiller].setPlacering(6);
+            Entity.Transaktioner.betalTilBank(spiller, 5);
+            Game.Controller.spillere[spiller].alleredeIFængsel = false;
         }
 
 */
@@ -66,7 +70,7 @@ public class Spillebræt {
                 }
             }
 
-            else // (Felter.feltliste[placering].købt == false)
+            else // (Felter.Felter.feltliste[placering].købt == false)
                  { // Køber felt
                 Transaktioner.betalTilBank(spiller, blok.felter.feltliste[placering].pris);
                 blok.felter.feltliste[placering].købt = true;
@@ -77,9 +81,9 @@ public class Spillebræt {
 
 
         if (blok.felter.feltliste[placering].gåIFængsel == true) { // er på fængselfelt
-          /*  if (Controller.spillere[spiller].alleredeIFængsel == false) {
-                Controller.spillere[spiller].alleredeIFængsel = true;
-                Controller.spillere[spiller].setPlacering(6);
+          /*  if (Game.Controller.spillere[spiller].alleredeIFængsel == false) {
+                Game.Controller.spillere[spiller].alleredeIFængsel = true;
+                Game.Controller.spillere[spiller].setPlacering(6);
             }
             */
 

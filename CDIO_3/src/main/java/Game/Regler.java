@@ -1,13 +1,15 @@
+package Game;
+
 import java.util.Scanner;
 
 public class Regler {
 
-    int antalSpillere;
+    public int antalSpillere;
 
 
     Scanner scanner = new Scanner(System.in);
 
-    Regler() {
+    public Regler() {
         System.out.println("Indtast antal Spillere: ");
         antalSpillere = scanner.nextInt();
 
@@ -24,7 +26,7 @@ public class Regler {
     }
 
     int penge;
-    int startPenge() {
+    public int startPenge() {
             if (antalSpillere == 2) {
                 penge = 20;
             } else if (antalSpillere == 3) {

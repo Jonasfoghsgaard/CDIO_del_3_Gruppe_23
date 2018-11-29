@@ -1,15 +1,18 @@
-import java.util.Scanner;
- public class SpillerKonto {
+package Entity;
+
+import Game.Controller;
+
+public class SpillerKonto {
 
 
 
 
-    boolean[] ejet;
+    public boolean[] ejet;
 
 
 
      private int penge;
-     int getPenge() { return penge; }
+     public int getPenge() { return penge; }
      public void setPenge(int penge) {
          this.penge = penge;
      }

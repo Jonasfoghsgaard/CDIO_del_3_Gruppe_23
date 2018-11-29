@@ -1,8 +1,12 @@
+package Fields;
+
+import Game.Controller;
+
 public class Farveblokke {
 
-    Felter felter = new Felter();
+    public Felter felter = new Felter();
 
-        void ejerBeggeGrunde() { // tjekker om en spiller ejer begge grunde.
+        public void ejerBeggeGrunde() { // tjekker om en spiller ejer begge grunde.
 
         for (int i = 0; i < Controller.regler.antalSpillere; i++) {
 

@@ -1,11 +1,12 @@
-import java.util.Random;
+package Fields;
+
 public class Chancekort {
 
 
-    kort[] kort;
+    public kort[] kort;
 
 
-    class kort {
+    public class kort {
         public String info;
         public String Handling;
         public int værdi;
@@ -20,7 +21,7 @@ public class Chancekort {
         }
 
     }
-    Chancekort() {
+    public Chancekort() {
 
 
         kort = new kort[6];

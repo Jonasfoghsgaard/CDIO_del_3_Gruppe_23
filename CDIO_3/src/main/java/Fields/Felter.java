@@ -1,18 +1,20 @@
+package Fields;
+
 public class Felter {
 
 
 
-    int pris;
+    public int pris;
     int placering;
-    String info;
-    boolean købt;
-    boolean gåIFængsel;
-    boolean startFelt;
-    boolean chanceFelt;
-    boolean ejendomsFelt;
-    boolean ingenHandling;
+    public String info;
+    public boolean købt;
+    public boolean gåIFængsel;
+    public boolean startFelt;
+    public boolean chanceFelt;
+    public boolean ejendomsFelt;
+    public boolean ingenHandling;
     boolean besøgIFængsel;
-    Felter[] feltliste;
+    public Felter[] feltliste;
 
 
     public Felter() {
@@ -30,12 +32,11 @@ public class Felter {
 
     }
 
-    void opretFelter() {
+    public void opretFelter() {
 
         Felter chanceKort = new Felter(); // Felt 3, 9, 15, 21
         chanceKort.chanceFelt = true;
         chanceKort.info = "Træk et chancekort :)";
-
 
 
         Felter start = new Felter(); // Felt 0
@@ -67,7 +68,6 @@ public class Felter {
         isKiosken.ejendomsFelt = true;
 
 
-
         isKiosken.pris = 1;
         isKiosken.info = "is koster 1";
 
@@ -81,7 +81,6 @@ public class Felter {
         museet.ejendomsFelt = true;
 
 
-
         museet.pris = 2;
         museet.info = "Museet koster 2";
 
@@ -89,7 +88,6 @@ public class Felter {
         Felter biblioteket = new Felter(); // Felt 8
 
         biblioteket.ejendomsFelt = true;
-
 
 
         biblioteket.pris = 2;

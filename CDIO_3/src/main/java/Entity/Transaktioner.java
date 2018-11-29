@@ -1,3 +1,7 @@
+package Entity;
+
+import Game.Controller;
+
 public class Transaktioner {
 
 

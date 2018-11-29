@@ -1,11 +1,13 @@
-import java.lang.*;
+package Game;
+
+import Entity.Spiller;
 
 public class Controller {
-    static Regler regler = new Regler();
-    static Spiller[] spillere = new Spiller[regler.antalSpillere];
+    public static Regler regler = new Regler();
+    public static Spiller[] spillere = new Spiller[regler.antalSpillere];
 
 
-    public static void main(String[] args) {
+    public static void spillogik() {
         boolean spilSpillet = true;
 
         Spillebræt spillebræt = new Spillebræt();
@@ -45,7 +47,7 @@ public class Controller {
 
                 System.out.println("STATUS");
                 for (int i = 0; i < regler.antalSpillere; i++) {
-                    System.out.println("Spiller: " + (i + 1) + " " + spillere[i].getName() + " konto: " + spillere[i].sKonto.getPenge());
+                    System.out.println("Entity.Spiller: " + (i + 1) + " " + spillere[i].getName() + " konto: " + spillere[i].sKonto.getPenge());
                 }
                 System.out.println("------------------------------------------");
 
