@@ -73,7 +73,7 @@ public class Spiller {
         return kort;
     }
 
-   int getKort() { return kort;}
+    int getKort() { return kort;}
 
 
 
@@ -159,15 +159,3 @@ public class Spiller {
 */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

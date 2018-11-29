@@ -79,29 +79,25 @@ public class Controller {
             }
         }
 
-            if (slutKonto[0] > slutKonto[1] && slutKonto[0] > slutKonto[2] && slutKonto[0] > slutKonto[3]) {
-                System.out.println("Vinderen af spillet er: " + spillere[0].getName());
-            }
+        if (slutKonto[0] > slutKonto[1] && slutKonto[0] > slutKonto[2] && slutKonto[0] > slutKonto[3]) {
+            System.out.println("Vinderen af spillet er: " + spillere[0].getName());
+        }
 
 
-            if (slutKonto[1] > slutKonto[0] && slutKonto[1] > slutKonto[2] && slutKonto[1] > slutKonto[3]) {
-                System.out.println("Vinderen af spillet er: " + spillere[1].getName());
-            }
+        if (slutKonto[1] > slutKonto[0] && slutKonto[1] > slutKonto[2] && slutKonto[1] > slutKonto[3]) {
+            System.out.println("Vinderen af spillet er: " + spillere[1].getName());
+        }
 
 
-            if (slutKonto[2] > slutKonto[0] && slutKonto[2] > slutKonto[1] && slutKonto[2] > slutKonto[3]) {
-                System.out.println("Vinderen af spillet er: " + spillere[2].getName());
-            }
+        if (slutKonto[2] > slutKonto[0] && slutKonto[2] > slutKonto[1] && slutKonto[2] > slutKonto[3]) {
+            System.out.println("Vinderen af spillet er: " + spillere[2].getName());
+        }
 
 
-            if (slutKonto[3] > slutKonto[1] && slutKonto[3] > slutKonto[2] && slutKonto[3] > slutKonto[0]) {
-                System.out.println("Vinderen af spillet er: " + spillere[3].getName());
-            }
+        if (slutKonto[3] > slutKonto[1] && slutKonto[3] > slutKonto[2] && slutKonto[3] > slutKonto[0]) {
+            System.out.println("Vinderen af spillet er: " + spillere[3].getName());
+        }
 
 
     }
 }
-
-
-
-

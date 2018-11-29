@@ -4,6 +4,10 @@ import Entity.Terning;
 import Entity.Transaktioner;
 import Fields.Farveblokke;
 
+import Entity.Terning;
+import Entity.Transaktioner;
+import Fields.Farveblokke;
+
 public class Spillebræt {
 
 
@@ -14,21 +18,11 @@ public class Spillebræt {
     private Terning terning = new Terning();
 
 
-
-
-
-
-
     void fåNyPlacering(int spiller) {
         terning.slåMedTerning();
 
 
-
-
-
-
-
-       Controller.spillere[spiller].setPlacering(Controller.spillere[spiller].getPlacering()+ terning.getØjne());
+        Controller.spillere[spiller].setPlacering(Controller.spillere[spiller].getPlacering()+ terning.getØjne());
 
 
         if (Controller.spillere[spiller].getPlacering() > 23) {
@@ -54,7 +48,6 @@ public class Spillebræt {
             Entity.Transaktioner.betalTilBank(spiller, 5);
             Game.Controller.spillere[spiller].alleredeIFængsel = false;
         }
-
 */
 
 
@@ -71,7 +64,7 @@ public class Spillebræt {
             }
 
             else // (Felter.Felter.feltliste[placering].købt == false)
-                 { // Køber felt
+            { // Køber felt
                 Transaktioner.betalTilBank(spiller, blok.felter.feltliste[placering].pris);
                 blok.felter.feltliste[placering].købt = true;
                 Controller.spillere[spiller].sKonto.ejet[placering] = true;
@@ -89,26 +82,24 @@ public class Spillebræt {
 
 
         } else if (blok.felter.feltliste[placering].chanceFelt == true) {
-          Controller.spillere[spiller].trækChancekort(spiller);
+            Controller.spillere[spiller].trækChancekort(spiller);
 
-          if (Controller.spillere[spiller].getPlacering() != Controller.spillere[spiller].getgamlePlacering() ) {
-
-
-              if (Controller.spillere[spiller].getPlacering() > 23) {
-                  Controller.spillere[spiller].setPlacering(Controller.spillere[spiller].getPlacering() - 24);
-                  spillerHandling(spiller, Controller.spillere[spiller].getPlacering());
+            if (Controller.spillere[spiller].getPlacering() != Controller.spillere[spiller].getgamlePlacering() ) {
 
 
-                  System.out.print("felt: ");
-              }
-              System.out.println(blok.felter.feltliste[Controller.spillere[spiller].getPlacering()].info);
-              System.out.print("Placering: "); // Hvor spilleren står.
-              System.out.println(Controller.spillere[spiller].getPlacering());
+                if (Controller.spillere[spiller].getPlacering() > 23) {
+                    Controller.spillere[spiller].setPlacering(Controller.spillere[spiller].getPlacering() - 24);
+                    spillerHandling(spiller, Controller.spillere[spiller].getPlacering());
 
 
+                    System.out.print("felt: ");
+                }
+                System.out.println(blok.felter.feltliste[Controller.spillere[spiller].getPlacering()].info);
+                System.out.print("Placering: "); // Hvor spilleren står.
+                System.out.println(Controller.spillere[spiller].getPlacering());
 
 
-          }
+            }
 
 
         } else if (blok.felter.feltliste[placering].ingenHandling == true) {
