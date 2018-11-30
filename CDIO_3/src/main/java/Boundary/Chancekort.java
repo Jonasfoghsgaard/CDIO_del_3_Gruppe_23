@@ -54,11 +54,14 @@ public class Chancekort {
         };
         tilføjChance(chancekortBeskrivelse, chancekort_run);
 
-        chancekortBeskrivelse = "CHANCE: Ryk op til 5 felter frem!";
+        chancekortBeskrivelse = "CHANCE: Ryk 5 felter frem!";
         chancekort_run = new Runnable() {
             public void run() {
-                int antal = GameBoard.getBræt().getUserInteger("Hvor mange felter vil du rykke frem?", 1, 5);
-                GameBoard.rykPåBrik(Tur.getnuværendeSpiller(), antal);
+                if (Tur.getnuværendeSpiller().getFeltplacering() == 21){
+                    GameBoard.rykPåBrik(Tur.getnuværendeSpiller(),2);
+                }
+                else
+                GameBoard.rykPåBrik(Tur.getnuværendeSpiller(),Tur.getnuværendeSpiller().getFeltplacering()+5 );
             }
         };
         tilføjChance(chancekortBeskrivelse, chancekort_run);
@@ -68,7 +71,7 @@ public class Chancekort {
             public void run() {
                 boolean valg = GameBoard.getBræt().getUserLeftButtonPressed("Vil du rykke 1 felt frem eller tag et nyt chance kort?", "1 felt frem", "Nyt kort");
                 if (valg) {
-                    GameBoard.rykPåBrik(Tur.getnuværendeSpiller(), 1);
+                    GameBoard.rykPåBrik(Tur.getnuværendeSpiller(), Tur.getnuværendeSpiller().getFeltplacering() +1);
                 } else {
                     Chancekort chancekort =  getNæsteChanceKort();
                     GameBoard.getBræt().showMessage(chancekort.getBeskrivelse());
@@ -123,6 +126,7 @@ public class Chancekort {
                 Tur.getnuværendeSpiller().setSpillerHarFængselsKortet(true);
             }
         };
+
         tilføjChance(
                 chancekortBeskrivelse, chancekort_run);
 
@@ -132,11 +136,14 @@ public class Chancekort {
         chancekort_run = new Runnable() {
             public void run() {
                 GameBoard.rykPåBrik(Tur.getnuværendeSpiller(), 10, true);
+
             }
+
         };
         tilføjChance(
                 chancekortBeskrivelse, chancekort_run);
 
         Collections.shuffle(chancer);
     }
+
 }

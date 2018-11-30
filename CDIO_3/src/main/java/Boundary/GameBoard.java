@@ -123,14 +123,14 @@ public class GameBoard {
 
         felter[22] = new GUI_Street();
         felter[22].setTitle("Vandlandet");
-        felter[22].setSubText("$4");
-        felter[22].setDescription("Feltet koster $4");
+        felter[22].setSubText("$5");
+        felter[22].setDescription("Feltet koster $5");
         felter[22].setBackGroundColor(new Color(79, 123, 255));
 
         felter[23] = new GUI_Street();
         felter[23].setTitle("Strandpromenaden");
-        felter[23].setSubText("$4");
-        felter[23].setDescription("Feltet koster $4");
+        felter[23].setSubText("$5");
+        felter[23].setDescription("Feltet koster $5");
         felter[23].setBackGroundColor(new Color(79, 123, 255));
 
         for(GUI_Field felt: felter) {
@@ -160,9 +160,11 @@ public class GameBoard {
                     gade = (GUI_Street)felter[i]; gade.setRent("3"); break;
                 case 19:
                 case 20:
+                    gade = (GUI_Street)felter[i]; gade.setRent("4"); break;
                 case 22:
                 case 23:
-                    gade = (GUI_Street)felter[i]; gade.setRent("4"); break;
+                    gade = (GUI_Street)felter[i]; gade.setRent("5"); break;
+
             }
         }
 
@@ -243,7 +245,11 @@ public class GameBoard {
                 int rent = parseInt(gade.getRent());
                 if (spiller != getFeltejer(feltplacering)) {
                     spiller.betalHusleje(rent, getFeltejer(feltplacering));
+
                 }
+
+
+
             }
         } else if (feltplacering == 3 || feltplacering == 9 || feltplacering == 15 || feltplacering == 21) {
             Chancekort chancekort = Chancekort.getNæsteChanceKort();
