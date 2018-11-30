@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16c4fef3-2bc1-4540-b021-ad3e6fbf73d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Controller/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Tur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/CDIO_3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/CDIO_3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/SpillerKonto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Transaktioner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Chancekort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Farveblokke.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Felter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Regler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/target/classes/Entity/Spiller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/target/classes/Game/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/target/classes/Game/Spillebræt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/target/classes/KørSpillet.class" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/target/classes/KørSpillet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/KørSpillet.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CDIO_3/Output/" />
     <ignored path="$PROJECT_DIR$/CDIO_3/target/" />
@@ -23,35 +36,36 @@
     <session id="-656468536">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
-          <entry key="java" value="76" />
-          <entry key="xml" value="3" />
+          <entry key="class" value="11" />
+          <entry key="java" value="94" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="76" />
-          <entry key="XML" value="3" />
+          <entry key="CLASS" value="11" />
+          <entry key="JAVA" value="94" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1363" />
+          <entry key="java" value="1370" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1363" />
+          <entry key="JAVA" value="1370" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -64,70 +78,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Felter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2685">
-              <caret line="179" selection-start-line="179" selection-end-line="179" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/KørSpillet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#861#862#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,9 +115,11 @@
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/KørSpillet.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/View/BilFarve.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/View/Gui_handler.java" />
-        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/SpillerKonto.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java" />
       </list>
     </option>
   </component>
@@ -185,8 +138,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,28 +152,6 @@
               <item name="CDIO_3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CDIO_del_3_Gruppe_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CDIO_3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CDIO_del_3_Gruppe_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CDIO_3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CDIO_del_3_Gruppe_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="CDIO_del_3_Gruppe_23" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: diplomitdtu:matadorgui:3.1.3" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -230,11 +161,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543518695370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543555042323" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CDIO_3/src/main/java" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -248,29 +184,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.KørSpillet">
-    <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game.Controller" />
+  <component name="RunManager">
+    <configuration name="Monopoly_Junior" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Monopoly_Junior" />
       <module name="CDIO_3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KørSpillet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KørSpillet" />
-      <module name="CDIO_3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.Controller" />
-      <item itemvalue="Application.KørSpillet" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KørSpillet" />
-        <item itemvalue="Application.Controller" />
+        <item itemvalue="Application.Monopoly_Junior" />
         <item itemvalue="Application.Controller" />
         <item itemvalue="Application.Controller" />
       </list>
@@ -287,17 +211,21 @@
       <option name="presentableId" value="Default" />
       <updated>1543503085347</updated>
       <workItem from="1543503088316" duration="9684000" />
-      <workItem from="1543516340767" duration="2349000" />
+      <workItem from="1543516340767" duration="2484000" />
+      <workItem from="1543519366968" duration="513000" />
+      <workItem from="1543521081505" duration="2355000" />
+      <workItem from="1543525365009" duration="9143000" />
+      <workItem from="1543554720022" duration="259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12033000" />
+    <option name="totallyTimeSpent" value="24438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -307,7 +235,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,117 +271,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/GUI_klasse.java" />
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr13/src/Game/Language.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr13/src/Game/Language.java" />
     <entry file="file://$PROJECT_DIR$/../CDIO3/gr36/src/entity/fields/AbstractFields.java" />
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Dice.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Dice.java" />
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Gui_handler.java" />
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/GUI/GUI_handler.java" />
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Regler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Chancekort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Transaktioner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/SpillerKonto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/controller/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1203" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/entity/Die.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/entity/Player.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr35/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/controller/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Dicebox.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Field.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Player.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/controller/Game.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/entity/Die.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/entity/Player.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr35/src/main/Main.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/controller/GameController.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Dicebox.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Field.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr37/src/entity/Player.java" />
     <entry file="file://$PROJECT_DIR$/../CDIO3/gr36/src/spil/Main.java" />
     <entry file="file://$PROJECT_DIR$/../CDIO3/gr36/src/controller/Game.java" />
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Account.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Ownable.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CDIO3/gr25/src/boards/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Farveblokke.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Account.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Ownable.java" />
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr25/src/boards/GameBoard.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_fields/Brewery.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -493,9 +328,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-725">
           <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/View/BilFarve.java" />
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/View/Gui_handler.java" />
+    <entry file="file://$PROJECT_DIR$/CDIO_3/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CDIO3/gr22/src/boundary/Fleet.java" />
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/KørSpillet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -506,85 +355,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/View/BilFarve.java">
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Farveblokke.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state relative-caret-position="690">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Regler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Fields/Chancekort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Transaktioner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/SpillerKonto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2712#2713#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/View/Gui_handler.java">
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="675">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6021#6022#0" expanded="true" />
-            <element signature="e#6075#6076#0" expanded="true" />
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6356#6357#0" expanded="true" />
-            <element signature="e#7190#7191#0" expanded="true" />
-            <element signature="e#7229#7230#0" expanded="true" />
-            <element signature="e#8993#8994#0" expanded="true" />
-            <element signature="e#9058#9059#0" expanded="true" />
-            <element signature="e#17754#17755#0" expanded="true" />
-            <element signature="e#17824#17825#0" expanded="true" />
-            <element signature="e#17892#17893#0" expanded="true" />
-            <element signature="e#17961#17962#0" expanded="true" />
-            <element signature="e#17999#18000#0" expanded="true" />
-            <element signature="e#18059#18060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="method#Chancekort#0;class#Chancekort#0" />
+            <element signature="method#kør#0;class#Chancekort#0" />
+            <element signature="method#tilføjChance#0;class#Chancekort#0" />
+            <element signature="method#getNæsteChanceKort#0;class#Chancekort#0" />
+            <element signature="method#opretChancerKort#0;class#Chancekort#0" />
+            <element signature="e#1511#1716#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="method#opretPlade#0;class#GameBoard#0" />
+            <element signature="method#tilføjKøretøj#0;class#GameBoard#0" />
+            <element signature="method#rykPåBrikken#0;class#GameBoard#0" />
+            <element signature="method#rykPåBrik#0;class#GameBoard#0" />
+            <element signature="method#smidSpillerIFængsel#0;class#GameBoard#0" />
+            <element signature="method#feltHandling#0;class#GameBoard#0" />
+            <element signature="method#getLedigefelter#0;class#GameBoard#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind/GUI_BoardController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind/FieldMouseListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind/CenterMouseListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/diplomitdtu/matadorgui/3.1.3/matadorgui-3.1.3.jar!/gui_codebehind/Center.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="method#GameController#0;class#GameController#0" />
+            <element signature="method#spilLogik#0;class#GameController#0" />
+            <element signature="method#Start#0;class#GameController#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="735">
+          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
+            <element signature="method#Spiller#0;class#Spiller#0" />
+            <element signature="method#setBilType#0;class#Spiller#0" />
+            <element signature="method#setNavn#0;class#Spiller#0" />
+            <element signature="method#setBeholdning#0;class#Spiller#0" />
+            <element signature="method#tilføjTilBeholdning#0;class#Spiller#0" />
+            <element signature="method#betalHusleje#0;class#Spiller#0" />
+            <element signature="method#flytFeltPlacering#0;class#Spiller#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java">
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="76" column="42" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+        <state relative-caret-position="210">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="method#Terning#0;class#Terning#0" />
+            <element signature="method#kastTerningen#0;class#Terning#0" />
+            <element signature="method#sum#0;class#Terning#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/KørSpillet.java">
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Tur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="390">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="method#tilføjSpillere#0;class#Tur#0" />
+            <element signature="method#næsteSpiller#0;class#Tur#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java">
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#spillerAntal#0;class#Input#0" />
+            <element signature="method#spillerNavn#0;class#Input#0" />
+          </folding>
         </state>
       </provider>
     </entry>

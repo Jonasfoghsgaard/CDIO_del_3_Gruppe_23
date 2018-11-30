@@ -1,161 +1,136 @@
 package Entity;
 
-import Fields.Chancekort;
-import Game.Controller;
+import gui_fields.GUI_Car;
+import gui_fields.GUI_Player;
 
-import java.util.Scanner;
-import java.util.Random;
-
+import java.awt.*;
 
 public class Spiller {
+    private String navn;
+    private GUI_Player spiller;
+    private int beholdning;
+    private boolean spillerErBlevetFængslet;
+    private boolean spillerHarFængselsKortet;
+    private static Color farve;
+    private GUI_Car bil;
+    private String spillerskøretøj;
+    private int feltplacering;
 
-    public SpillerKonto sKonto = new SpillerKonto();
-    Scanner scanner = new Scanner(System.in);
-    Chancekort chancekort = new Chancekort();
-
-
-    private String name = "";
-    private int placering;
-    private int gamlePlacering;
-    boolean alleredeIFængsel;
-
-    public String getName() {
-        return name;
-    }
-
-    public int getgamlePlacering() {
-        return gamlePlacering;
-    }
-
-    public int getPlacering() {
-        return placering;
-    }
-
-
-    public void setGamlePlacering(int gamlePlacering) {
-        this.gamlePlacering = gamlePlacering;
-    }
-
-    public void setPlacering(int placering) {
-        this.placering = placering;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setalleredeIFængsel(boolean ForT) {
-        this.alleredeIFængsel = alleredeIFængsel;
-    }
-
-
-    public Spiller() {
-
-        alleredeIFængsel = false;
-        placering = 0;
-
-        System.out.println("Indtast navn: ");
-        setName(scanner.next());
+    //En konstruktør, der viser hvad en spiller har.
+    public Spiller(){
+        beholdning = 0;
+        feltplacering = 0;
+        spillerErBlevetFængslet = false;
+        spillerHarFængselsKortet = false;
+        spillerskøretøj = "";
 
     }
 
-
-    Random kortvælger = new Random();
-    int kort;
-
-    private int tilfældigKort() {
-
-
-
-
-
-        kort = kortvælger.nextInt(6);
-        return kort;
+    //En "set" metode, der viser køretøjets egenskaber.
+    public void setBilType(String køretøj){
+        if (køretøj.equals("Bil")){
+            farve = new Color(255, 0, 0);
+            bil = new GUI_Car(farve, Color.RED, GUI_Car.Type.CAR, GUI_Car.Pattern.FILL);
+            spillerskøretøj = "Bil;";
+        } else if (køretøj.equals("Racerbil")) {
+            farve = new Color(255, 255, 0);
+            bil = new GUI_Car(farve, Color.YELLOW, GUI_Car.Type.RACECAR, GUI_Car.Pattern.FILL);
+            spillerskøretøj = "Racerbil";
+        } else if (køretøj.equals("Traktor")) {
+            farve = new Color(0, 255, 0);
+            bil = new GUI_Car(farve, Color.GREEN, GUI_Car.Type.TRACTOR, GUI_Car.Pattern.FILL);
+            spillerskøretøj = "Traktor";
+        } else if (køretøj.equals("Ufo")) {
+            farve = new Color(0, 0, 255);
+            bil = new GUI_Car(farve, Color.BLUE, GUI_Car.Type.UFO, GUI_Car.Pattern.FILL);
+            spillerskøretøj = "Ufo";
+        } else {
+            farve = new Color(213,63,119);
+            bil = new GUI_Car(farve, Color.MAGENTA, GUI_Car.Type.RACECAR, GUI_Car.Pattern.FILL);
+            spillerskøretøj = "Bil"; }
     }
 
-    int getKort() { return kort;}
+    //En "get" metode, der hente returnerer farven.
+    public static Color getFarve() {
+        return farve;
+    }
 
+    //En "set" metode, der sætter navnet for spilleren i GUI
+    public void setNavn(String navn){
+        this.navn=navn;
+        spiller = new GUI_Player(navn,beholdning,bil);
+    }
 
+    //En "Get" metode, der henter navnet
+    public String getNavn() {
+        return navn;
+    }
 
-
-
-
-
-    public void trækChancekort(int spiller) {
-        tilfældigKort();
-        int kortvælger = getKort();
-
-
-        int antalSpillere = Controller.regler.antalSpillere;
-        int placering = Controller.spillere[spiller].getPlacering();
-        String info = chancekort.kort[kortvælger].info;
-        String handling = chancekort.kort[kortvælger].Handling;
-        int værdi = chancekort.kort[kortvælger].værdi;
-        int penge = Controller.spillere[spiller].sKonto.getPenge();
-
-
-        if (handling.equals("RykTilStart")) {
-            Controller.spillere[spiller].setPlacering(værdi);
-            System.out.println(info);
-            Transaktioner.passerStart(spiller);
-
+    //Denne metode "setter" beholdningen, hensyntagen af det given parameter.
+    public void setBeholdning(int beholdning) {
+        if (beholdning>=0){
+        this.beholdning = beholdning;
         }
-
-        if (handling.equals("RykFelter")) {
-            Controller.spillere[spiller].setPlacering(placering + værdi);
-            System.out.println(info);
-        }
-
-
-        if (handling.equals("BetalTilBank")) {
-            Transaktioner.betalTilBank(spiller, værdi);
-            System.out.println(info);
-
-        }
-
-        if (handling.equals("LavetLektier")) {
-            Controller.spillere[spiller].sKonto.setPenge(penge + 2);
-            System.out.println(info);
-        }
-
-        if (handling.equals("RykEllerTræk")) {
-            System.out.println(info);
-            System.out.println("Skriv ja for at modtage et nyt chancekort.");
-            Scanner scanner = new Scanner(System.in);
-
-
-            String ja = scanner.next();
-            if (ja.equals("ja")) {
-                Controller.spillere[spiller].trækChancekort(spiller);
-                System.out.println("Du har valgt at modtage et nyt chancekort,");
-            } else {
-                Controller.spillere[spiller].setPlacering(placering + 1);
-                System.out.println("Du har valgt at rykket et felt frem.");
-            }
-        }
-
-        if (handling.equals("Fødselsdag")) {
-            System.out.println(info);
-
-            for (int i = 0; i < antalSpillere; i++) {
-                Transaktioner.betalPenge(i, spiller, 1);
-
-            }
-        }
-/*
-        if (handling.equals("gratisOrange")){
-            Game.Controller.spillere[spiller].setPlacering(10);
-            for (int i = 0; i < antalSpillere; i++) {
-                if (Game.Controller.spillere[i].sKonto.ejet[placering] == false)
-                {
-                 setPlacering(10);
-                 Entity.Transaktioner.betalTilBank(spiller, værdi);
-                }
-                else{
-                    setPlacering(10);
-                }
-            }
-        }
-*/
     }
-}
+
+    //Get metode, der henter vores beholdning
+    public int getBeholdning() {
+        return beholdning;
+    }
+
+    //Denne metode er vigtig, da det "tilføjTilBeholdning" giver likvide midler på kontoen og det er en af de vigtigste elementer i koden.
+    public void tilføjTilBeholdning(int penge){
+        beholdning += penge;
+        if (beholdning <= 0){
+            beholdning = 0;
+        }
+    }
+
+    //Her betales huslejen, det er lidt øv, men man skal jo tjene penge, ikke sandt?
+    public void betalHusleje(int penge, Spiller spiller) {
+        beholdning -= penge;
+        spiller.tilføjTilBeholdning(penge);
+    }
+
+    //Denne metode "Setter" placering af felterne.
+    public void setFeltplacering(int feltplacering) {
+        this.feltplacering = feltplacering;
+    }
+
+    //Denne metode flytter spillerensplacering.
+    public void flytFeltPlacering(int placering) {
+        feltplacering += placering;
+        if (feltplacering > 23) {
+            feltplacering -= 24;
+            tilføjTilBeholdning(2);
+        }
+    }
+
+    //Endnu en "get" metode....
+    public int getFeltplacering() {
+        return feltplacering;
+    }
+
+    //Opretter en GUI_Player og får den returneret.
+    public GUI_Player getSpiller() {
+        return spiller;
+    }
+
+
+    //FÆNGSEL !!!!! Disse metoder viser de forskellige tilstande, når man skal i fængsel og kortet der kan få spilleren ud.
+
+    public void setSpillerErBlevetFængslet(boolean fængslet) {
+        this.spillerErBlevetFængslet = fængslet;
+    }
+
+    public boolean isSpillerErBlevetFængslet() {
+        return spillerErBlevetFængslet;
+    }
+
+    public boolean spillerHarFængselsKortet() {
+        return spillerHarFængselsKortet;
+    }
+
+    public void setSpillerHarFængselsKortet(boolean fængselsKortet) {
+        this.spillerHarFængselsKortet = fængselsKortet;
+    }}
