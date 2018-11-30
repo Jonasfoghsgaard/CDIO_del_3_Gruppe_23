@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="16c4fef3-2bc1-4540-b021-ad3e6fbf73d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/CDIO_3/Output/" />
@@ -62,27 +61,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="9" />
+          <entry key="java" value="12" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="12" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="191" />
-          <entry key="txt" value="50" />
+          <entry key="java" value="620" />
+          <entry key="txt" value="208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="191" />
-          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="JAVA" value="620" />
+          <entry key="PLAIN_TEXT" value="208" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -99,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="415">
+              <caret line="51" column="98" lean-forward="true" selection-start-line="51" selection-start-column="98" selection-end-line="51" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#GameController#0;class#GameController#0" />
@@ -113,40 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/Input.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Chancekort#0;class#Chancekort#0" />
-                <element signature="method#kør#0;class#Chancekort#0" />
-                <element signature="method#tilføjChance#0;class#Chancekort#0" />
-                <element signature="method#getNæsteChanceKort#0;class#Chancekort#0" />
-                <element signature="e#1867#2184#0" expanded="true" />
-                <element signature="e#2183#2184#0" expanded="true" />
-                <element signature="e#2363#2972#0" expanded="true" />
-                <element signature="e#2971#2972#0" expanded="true" />
-                <element signature="e#3154#3293#0" expanded="true" />
-                <element signature="e#3292#3293#0" expanded="true" />
-                <element signature="e#3473#3613#0" expanded="true" />
-                <element signature="e#3612#3613#0" expanded="true" />
-                <element signature="e#3804#4075#0" expanded="true" />
-                <element signature="e#4074#4075#0" expanded="true" />
-                <element signature="e#4277#4415#0" expanded="true" />
-                <element signature="e#4414#4415#0" expanded="true" />
-                <element signature="e#4642#4791#0" expanded="true" />
-                <element signature="e#4790#4791#0" expanded="true" />
-                <element signature="e#5079#5227#0" expanded="true" />
-                <element signature="e#5226#5227#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -154,16 +121,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="241" column="36" selection-start-line="241" selection-start-column="21" selection-end-line="241" selection-end-column="36" />
+            <state relative-caret-position="4029">
+              <caret line="250" column="12" selection-start-line="250" selection-start-column="12" selection-end-line="250" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#tilføjKøretøj#0;class#GameBoard#0" />
+                <element signature="e#6442#6443#0" expanded="true" />
+                <element signature="e#6469#6470#0" expanded="true" />
                 <element signature="method#rykPåBrikken#0;class#GameBoard#0" />
-                <element signature="method#rykPåBrik#0;class#GameBoard#0" />
-                <element signature="method#smidSpillerIFængsel#0;class#GameBoard#0" />
-                <element signature="e#7745#7746#0" expanded="true" />
-                <element signature="e#7782#7783#0" expanded="true" />
+                <element signature="e#7822#7823#0" expanded="true" />
+                <element signature="e#7860#7861#0" expanded="true" />
+                <element signature="e#11531#11532#0" expanded="true" />
+                <element signature="e#11575#11576#0" expanded="true" />
                 <element signature="e#9561#9572#0" expanded="true" />
               </folding>
             </state>
@@ -173,13 +141,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-734">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="-1064">
+              <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="method#setNavn#0;class#Spiller#0" />
                 <element signature="method#setBeholdning#0;class#Spiller#0" />
-                <element signature="method#tilføjTilBeholdning#0;class#Spiller#0" />
-                <element signature="method#betalHusleje#0;class#Spiller#0" />
                 <element signature="method#flytFeltPlacering#0;class#Spiller#0" />
               </folding>
             </state>
@@ -190,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="method#Terning#0;class#Terning#0" />
               </folding>
@@ -201,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Tur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+            <state relative-caret-position="-282">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#næsteSpiller#0;class#Tur#0" />
@@ -216,8 +182,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="68">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#tilføjChance#0;class#Chancekort#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,6 +207,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -262,10 +242,12 @@
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Controller.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Game/Spillebræt.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/SpillerKonto.java" />
-        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Tur.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/test/java/Monopoly_JuniorTest.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/test/java/Boundary/GameBoardTest.java" />
+        <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java" />
         <option value="$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java" />
       </list>
     </option>
@@ -276,9 +258,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="3840" />
+    <option name="height" value="2160" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -319,14 +301,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Boundary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CDIO_3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -360,7 +334,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543569561333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543592524198" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
@@ -368,6 +344,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Boundary" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CDIO_3/src/main/java" />
     </key>
@@ -414,7 +397,7 @@
       <workItem from="1543521081505" duration="2355000" />
       <workItem from="1543525365009" duration="9143000" />
       <workItem from="1543554720022" duration="259000" />
-      <workItem from="1543564947863" duration="4601000" />
+      <workItem from="1543564947863" duration="21260000" />
     </task>
     <task id="LOCAL-00001" summary="Har slettet Target folder, den bær ikke være der.">
       <created>1543564596491</created>
@@ -423,17 +406,24 @@
       <option name="project" value="LOCAL" />
       <updated>1543564596491</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Nu har jeg lige rettet lidt til. Men har endnu ikke implementeret dobbeltpris reglen. Jeg går i gang med resten af rapporten nu og vender tilbage.">
+      <created>1543569614693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543569614693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32435000" />
+    <option name="totallyTimeSpent" value="49094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49926144" visible="true" weight="0.2521322" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49926144" visible="true" weight="0.25402793" />
       <window_info id="Structure" order="1" sideWeight="0.50073856" side_tool="true" weight="0.2521322" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -443,12 +433,12 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32837301" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34842107" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32936507" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936507" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -503,11 +493,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Har slettet Target folder, den bær ikke være der." />
-    <option name="LAST_COMMIT_MESSAGE" value="Har slettet Target folder, den bær ikke være der." />
+    <MESSAGE value="Nu har jeg lige rettet lidt til. Men har endnu ikke implementeret dobbeltpris reglen. Jeg går i gang med resten af rapporten nu og vender tilbage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nu har jeg lige rettet lidt til. Men har endnu ikke implementeret dobbeltpris reglen. Jeg går i gang med resten af rapporten nu og vender tilbage." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/GUI_klasse.java" />
-    <entry file="file://$USER_HOME$/CDIO3/gr13/src/Game/Language.java" />
     <entry file="file://$USER_HOME$/CDIO3/gr36/src/entity/fields/AbstractFields.java" />
     <entry file="file://$USER_HOME$/CDIO3/gr34_og_Arbab_Jawal__rod/src/spil/Dice.java" />
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Gui_handler.java" />
@@ -561,20 +550,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/test/java/Monopoly_JuniorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/test/java/Boundary/GameBoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="12" column="45" lean-forward="true" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="method#setNavn#0;class#Spiller#0" />
+            <element signature="method#setBeholdning#0;class#Spiller#0" />
+            <element signature="method#flytFeltPlacering#0;class#Spiller#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Terning.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="method#Terning#0;class#Terning#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#tilføjChance#0;class#Chancekort#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Tur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="57" column="48" lean-forward="true" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+        <state relative-caret-position="-282">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#næsteSpiller#0;class#Tur#0" />
@@ -584,61 +610,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/Chancekort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Chancekort#0;class#Chancekort#0" />
-            <element signature="method#kør#0;class#Chancekort#0" />
-            <element signature="method#tilføjChance#0;class#Chancekort#0" />
-            <element signature="method#getNæsteChanceKort#0;class#Chancekort#0" />
-            <element signature="e#1867#2184#0" expanded="true" />
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2363#2972#0" expanded="true" />
-            <element signature="e#2971#2972#0" expanded="true" />
-            <element signature="e#3154#3293#0" expanded="true" />
-            <element signature="e#3292#3293#0" expanded="true" />
-            <element signature="e#3473#3613#0" expanded="true" />
-            <element signature="e#3612#3613#0" expanded="true" />
-            <element signature="e#3804#4075#0" expanded="true" />
-            <element signature="e#4074#4075#0" expanded="true" />
-            <element signature="e#4277#4415#0" expanded="true" />
-            <element signature="e#4414#4415#0" expanded="true" />
-            <element signature="e#4642#4791#0" expanded="true" />
-            <element signature="e#4790#4791#0" expanded="true" />
-            <element signature="e#5079#5227#0" expanded="true" />
-            <element signature="e#5226#5227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/Input.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Entity/Spiller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-734">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="method#setNavn#0;class#Spiller#0" />
-            <element signature="method#setBeholdning#0;class#Spiller#0" />
-            <element signature="method#tilføjTilBeholdning#0;class#Spiller#0" />
-            <element signature="method#betalHusleje#0;class#Spiller#0" />
-            <element signature="method#flytFeltPlacering#0;class#Spiller#0" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Controller/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="415">
+          <caret line="51" column="98" lean-forward="true" selection-start-line="51" selection-start-column="98" selection-end-line="51" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#GameController#0;class#GameController#0" />
@@ -649,23 +631,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Monopoly_Junior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="68">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CDIO_3/src/main/java/Boundary/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="241" column="36" selection-start-line="241" selection-start-column="21" selection-end-line="241" selection-end-column="36" />
+        <state relative-caret-position="4029">
+          <caret line="250" column="12" selection-start-line="250" selection-start-column="12" selection-end-line="250" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#tilføjKøretøj#0;class#GameBoard#0" />
+            <element signature="e#6442#6443#0" expanded="true" />
+            <element signature="e#6469#6470#0" expanded="true" />
             <element signature="method#rykPåBrikken#0;class#GameBoard#0" />
-            <element signature="method#rykPåBrik#0;class#GameBoard#0" />
-            <element signature="method#smidSpillerIFængsel#0;class#GameBoard#0" />
-            <element signature="e#7745#7746#0" expanded="true" />
-            <element signature="e#7782#7783#0" expanded="true" />
+            <element signature="e#7822#7823#0" expanded="true" />
+            <element signature="e#7860#7861#0" expanded="true" />
+            <element signature="e#11531#11532#0" expanded="true" />
+            <element signature="e#11575#11576#0" expanded="true" />
             <element signature="e#9561#9572#0" expanded="true" />
           </folding>
         </state>

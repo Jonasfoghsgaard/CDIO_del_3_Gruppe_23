@@ -145,6 +145,8 @@ public class GameBoard {
             switch (i) {
                 case 1:
                 case 2:
+                    gade = (GUI_Street)felter[i]; gade.setRent("1");
+                    break;
                 case 4:
                 case 5:
                     gade = (GUI_Street)felter[i]; gade.setRent("1"); break;
@@ -245,7 +247,6 @@ public class GameBoard {
                 int rent = parseInt(gade.getRent());
                 if (spiller != getFeltejer(feltplacering)) {
                     spiller.betalHusleje(rent, getFeltejer(feltplacering));
-
                 }
 
 
